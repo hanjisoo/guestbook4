@@ -8,7 +8,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="get" action="/g4/delete">
+	<form method="get" action="${pageContext.request.contextPath }/book/delete">
 	<input type='text' name="no" value="${num }"> <%-- 변수안쓸때는 ${param.no}으로 썼음 --%>
 		<!--hidden으로 숨겨줌 숫자보여주고 우리눈에 -->
 	<!-- <input type="text" name="a" value="delete"> -->
@@ -18,7 +18,7 @@
 			<td>비밀번호</td>
 			<td><input type="password" name="password"></td>
 			<td><input type="submit" value="등록"></td>
-			<td><a href="/g4/list">메인으로 돌아가기</a></td>
+			<td><a href="${pageContext.request.contextPath }/book/list">메인으로 돌아가기</a></td>
 		</tr>
 	</table>
 	</form>
